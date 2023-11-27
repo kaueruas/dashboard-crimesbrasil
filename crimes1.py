@@ -64,7 +64,7 @@ st.plotly_chart(fig3)
 
 media_por_estado = df.groupby('Uf')['Ocorrencias'].mean().reset_index()
 media_por_estado = media_por_estado.sort_values(by='Ocorrencias', ascending=False)
-fig4 = px.bar(media_por_estado, x='Ocorrencias', y='Uf',orientation="h", title='Média de Ocorrências por Estado',
+fig4 = px.bar(media_por_estado, x='Ocorrencias', y='Uf',orientation="h", title='Média de Ocorrências por Estado', height=900,
               labels={'Uf': 'Estado', 'Ocorrencias': 'Média de Ocorrências'})
 
 st.plotly_chart(fig4)
