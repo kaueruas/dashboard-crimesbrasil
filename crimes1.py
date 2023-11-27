@@ -6,8 +6,7 @@ df = pd.read_csv('Crimes_brasil_uf.csv')
 
 st.set_page_config(
     page_title="Crimes Dashboards",
-    layout="wide",
-    initial_sidebar_state="collapsed"
+    layout="wide"
 )
 
 
