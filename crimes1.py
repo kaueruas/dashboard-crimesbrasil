@@ -47,7 +47,7 @@ with right_column:
     st.plotly_chart(fig1)
 
 agrupar_data = df.groupby("Data")["Ocorrencias"].mean().reset_index()
-fig2=px.line(agrupar_data, x="Data", y="Ocorrencias" , labels={"Ocorrencias":"Ocorrências"},title="Ocorrências de crimes ao longo dos anos" )
+fig2=px.line(agrupar_data, x="Data", y="Ocorrencias" , labels={"Ocorrencias":"Ocorrências"},title="Ocorrências de crimes ao longo dos anos (2014-2022)" )
 col1, col2, col3 = st.columns([1, 3, 1])  
 with col2:
     st.plotly_chart(fig2, use_container_width=True)
